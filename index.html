@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="phone.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <title>Document</title>
+  <style>
+            @import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Francois One", sans-serif;
+  user-select: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #141414;
+  color: white;
+}
+.content {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+footer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.box1 {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fba92c;
+}
+.getInfo {
+  width: 90%;
+  min-height: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
+  padding: 10px;
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+}
+.getInfo h4 {
+  font-size: 20px;
+}
+.getInfo h2 {
+  color: #fba92c;
+  font-size: 40px;
+}
+input[type="email"],
+button {
+  width: 100%;
+  height: 40px;
+  border: 2px solid transparent;
+  outline: none;
+  padding: 0 5px;
+}
+button {
+  background-color: #fba92c;
+  font-size: 18px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: crimson;
+}
+.getInfo p {
+  color: white;
+}
+.getInfo p a {
+  color: crimson;
+}
+.box2 {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.box2 h1 {
+  font-size: 60px;
+  transform: rotate(-90deg);
+  position: relative;
+  left: -120px;
+  letter-spacing: 5px;
+  color: black;
+}
+.box3 {
+  width: auto;
+  height: 100%;
+}
+.links {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  min-width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 200px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px 0 10px 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.link {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.link h3 {
+  color: white;
+  font-size: 22px;
+}
+.link a {
+  color: #fba92c;
+}
+.link a:hover {
+  color: crimson;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.main {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.main h1 {
+  font-size: 60px;
+  color: white;
+}
+.main p {
+  font-size: 15px;
+  color: #fba92c;
+}
+.bottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.media {
+  padding: 10px;
+  transition: 0.2s linear;
+}
+.media:hover {
+  transform: translateY(-10px);
+}
+@media only screen and (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    min-height: 250vh;
+  }
+  .box2 {
+    width: 100%;
+  }
+  .box2 h1 {
+    transform: rotate(0);
+    font-size: 50px;
+    left: 0;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .link {
+    width: 90%;
+  }
+
+  button{
+    height: 60px;
+  }
+  .dropdown{
+    width: 100%;
+  }
+}
+.f_social_icon{
+   padding-left: 250px;
+  
+}
+.fab{
+    color:red;
+}
+.f_social_icon a:hover {
+        background: #5e2ced;
+        border-color: #5e2ced;
+      color:white;
+    }
+    .new_footer_top .f_social_icon a + a {
+        margin-left: 4px;
+    }
+    .dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 8.3em;
+    text-align: center;
+  }
+  
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">VIR_ALBUM</div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+
+        <li class="services">
+          <a href="/">Album-Services</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="Virender-MA.html" style="color: #e48509;">VIRENDER_POOJA MARRIAGE </a></li>
+            <li><a href="Mahesh-MA.html" style="color: #2cfb44;">MAHESH_RAKESH MARRIAGE</a></li>
+            <li><a href="Suresh_MA.html" style="color: #e62cfb;">SURESH_POONAM MARRIAGE</a></li>
+            <li><a href="Pawan.html" style="color: #fbed2c;">PAWAN MARRIAGE</a></li>
+            <li><a href="/" style="color: #fb2c2c;">Dropdown 5</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="/">Pricing</a></li>
+        <li><a href="/">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+  <div id="poster">
+    <h1>VIRENDER -MARRIAGE</h1>
+    <img src="./02/BDS_5362.JPG" alt="">
+    <div class="btn">
+    <button onclick="window.location.href='./Virender-MA.html';">Click Here For More Virender-Pooja Marriage Album Photos </button>
+ </div>
+    <h1>SURESH -MARRIAGE</h1>
+    <img src="./virender marriage photo and video/4/IMG_5150.JPG" alt="">
+    <div class="btn">
+        <button onclick="window.location.href='./Suresh_MA.html';">Click Here For More Suresh-Poonam Marriage Album Photos</button>
+     </div>
+    <h1>RAKESH_MAHESH -MARRIAGE</h1>
+    <img src="./mahesh/_DSC4900.JPG" alt="">
+    <div class="btn">
+        <button onclick="window.location.href='./Mahesh-MA.html';">Click Here For More Mahesh and Rakesh Marriage Album Photos</button>
+     </div>
+    <h1>PAWAN -MARRIAGE</h1>
+    <img src="./virender marriage photo and video/4/IMG_5081.JPG" alt="">
+    <div class="btn">
+        <button onclick="window.location.href='./Pawan.html';">Click Here For More Pawan Marriage Album Photos</button>
+     </div>
+  </div>
+<footer>
+  <div class="container">
+    <div class="content">
+      <div class="box box1">
+        <div class="getInfo">
+          <h4>Get in Touch with us</h4>
+          <h2>Subscribe Now</h2>
+          <input type="email" required placeholder="Email"><br>
+          <button type="button">Subscribe</button><br>
+          <br>
+          <p>Read our <a href="#">Privacy Policy</a>.</p>
+        </div>
+        <div class="links">
+          <div class="link1 link">
+            <h3>Follow here</h3>
+            <a href="#">About Us</a>
+            <a href="#">Blog</a>
+            <a href="#">Leadership</a>
+            <a href="#">Partners</a>
+            <a href="#">Advertisement</a>
+            <a href="#">Documentation</a>
+            <a href="#">Support</a>
+          </div>
+          <div class="link2 link">
+            <h3>For You</h3>
+            <a href="#">FAQs</a>
+            <a href="#">Cookies</a>
+            <a href="#">Terms of Policy</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Help</a>
+          </div>
+          <div class="link3 link">
+            <h3>Quick Links</h3>
+            <p>Website: <br><a href="https://virender876.github.io/vir/">https://virender876.github.io/vir/</a></p>
+            <p>Blog: <br><a href="https://virender876.github.io/vir/">https://virender876.github.io/vir/</a></p>
+            <p>Photo Gallery: <br><a href="https://virender876.github.io/vir/">https://virender876.github.io/vir/</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="box box2">
+        <h1>BigFOOTER</h1>
+      </div>
+      <div class="box box3">
+        <div class="about">
+          <div class="main">
+            <h1>About Us</h1>
+            <p><i>We are presenting footer design. Let's manipulate something and make people notice footer too!!!
+                Liked the idea? Do try the Challenges!!! Not just for developing ideas but for fun too!!!
+              </i></p>
+            <br>
+            <p><i>We are presenting footer design. Let's manipulate something and make people notice footer too!!!
+                Liked the idea? Do try the Challenges!!! Not just for developing ideas but for fun too!!!
+              </i></p><br>
+            <p><i>We are presenting footer design. Let's manipulate something and make people notice footer too!!!
+                Liked the idea? Do try the Challenges!!! Not just for developing ideas but for fun too!!!
+              </i></p>
+          </div>
+          <div class="f_social_icon">
+            <h2>follow us</h2>
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-whatsapp"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>  
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</footer>          
+</body>
+
+</html>
