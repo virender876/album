@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahesh-Sonum & Rakesh-Poonam Marriage Album</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="phone.css" />
+    <link rel="stylesheet" href="./min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Francois One", sans-serif;
+  user-select: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #141414;
+  color: white;
+}
+.content {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+.container img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.box1 {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fba92c;
+}
+.getInfo {
+  width: 90%;
+  min-height: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: black;
+  padding: 10px;
+  border-radius: 0 10px 10px 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 25px;
+}
+.getInfo h4 {
+  font-size: 20px;
+}
+.getInfo h2 {
+  color: #fba92c;
+  font-size: 40px;
+}
+input[type="email"],
+button {
+  width: 100%;
+  height: 40px;
+  border: 2px solid transparent;
+  outline: none;
+  padding: 0 5px;
+}
+button {
+  background-color: #fba92c;
+  font-size: 18px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: crimson;
+}
+.getInfo p {
+  color: white;
+}
+.getInfo p a {
+  color: crimson;
+}
+.box2 {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.box2 h1 {
+  font-size: 60px;
+  transform: rotate(-90deg);
+  position: relative;
+  left: -120px;
+  letter-spacing: 5px;
+  color: black;
+}
+.box3 {
+  width: auto;
+  height: 100%;
+}
+.links {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  min-width: 90%;
+  display: flex;
+  justify-content: space-evenly;
+  min-height: 200px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px 0 10px 10px;
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.link {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.link h3 {
+  color: white;
+  font-size: 22px;
+}
+.link a {
+  color: #fba92c;
+}
+.link a:hover {
+  color: crimson;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+.main {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+.main h1 {
+  font-size: 60px;
+  color: white;
+}
+.main p {
+  font-size: 15px;
+  color: #fba92c;
+}
+.bottom {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+}
+.media {
+  padding: 10px;
+  transition: 0.2s linear;
+}
+.media:hover {
+  transform: translateY(-10px);
+}
+@media only screen and (max-width: 900px) {
+  .content {
+    flex-direction: column;
+    min-height: 250vh;
+  }
+  .box2 {
+    width: 100%;
+  }
+  .box2 h1 {
+    transform: rotate(0);
+    font-size: 50px;
+    left: 0;
+  }
+  .links {
+    flex-direction: column;
+  }
+  .link {
+    width: 90%;
+  }
+}
+.f_social_icon a:hover {
+        background: #5e2ced;
+        border-color: #5e2ced;
+      color:white;
+    }
+    .new_footer_top .f_social_icon a + a {
+        margin-left: 4px;
+    }
+    .f_social_icon{
+   padding-left: 250px;
+  
+}
+.fab{
+    color:red;
+}
+.dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  .dropdown a{
+    font-size: 15px;
+  }
+  .dropdown li {
+    padding: 0.1em .5em;
+    width: 20em;
+    text-align: center;
+  }
+
+    </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">VIR_ALBUM</div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+
+        <li class="services">
+          <a href="/">Album-Services</a>
+
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="Virender-MA.html" style="color: #e48509;">VIRENDER_POOJA MARRIAGE </a></li>
+            <li><a href="Mahesh-MA.html" style="color: #2cfb44;">MAHESH_RAKESH MARRIAGE</a></li>
+            <li><a href="Suresh_MA.html" style="color: #e62cfb;">SURESH_POONAM MARRIAGE</a></li>
+            <li><a href="Pawan.html" style="color: #fbed2c;">PAWAN MARRIAGE</a></li>
+            <li><a href="/" style="color: #fb2c2c;">Dropdown 5</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="/">Pricing</a></li>
+        <li><a href="/">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+
+  <div class="Flickity-images photo">
+    <h1>Part-1 Images</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel"
+  data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+<img src="./mahesh/Still 01/DSC_2884.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2886.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2887.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2889.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2891.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2892.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2897.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2898.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2899.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2900.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2902.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2904.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2905.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2906.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2907.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2908.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2909.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2918.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2922.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2923.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2927.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2929.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2931.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2933.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2953.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2958.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2959.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2963.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2967.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2970.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2972.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2974.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2978.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2981.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2982.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2986.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2992.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_2995.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_3000.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_3011.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_3014.JPG" alt="">
+<img src="./mahesh/Still 01/DSC_3015.JPG" alt="">
+<img src="./mahesh/Still 02/DSC_3408.JPG" alt="">
+<img src="./mahesh/Still 02/DSC_3420.JPG" alt="">
+<img src="./mahesh/Still 02/DSC_3422.JPG" alt="">
+<img src="./mahesh/Still 02/DSC_3425.JPG" alt="">
+<img src="./mahesh/Still 02/DSC_3428.JPG" alt="">
+<img src="./mahesh/Still 02/DSC_3430.JPG" alt="">
+
+</div>
+</div>
+
+<div class="Flickity-images">
+  <h1 >Part-2 With Bhat Images</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel"
+data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+<img src="./mahesh/Still 02/_DSC3438.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3439.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3440.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3449.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3451.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3464.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3470.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3484.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3485.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3486.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3488.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3489.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3490.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3492.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3493.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3499.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3500.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3502.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3505.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3507.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3509.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3511.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3514.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3515.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3520.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3524.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3528.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3529.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3531.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3536.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3538.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3540.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3543.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3545.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3548.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3549.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3551.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3552.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3554.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3556.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3557.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3563.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3565.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3566.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3568.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3569.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3571.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3572.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3577.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3580.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3583.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3585.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3590.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3591.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3592.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3594.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3595.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3596.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3598.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3601.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3603.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3614.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3616.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3617.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3618.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3622.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3624.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3628.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3630.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3631.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3632.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3634.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3635.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3636.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3637.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3638.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3639.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3642.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3644.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3645.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3649.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3652.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3653.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3654.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3660.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3662.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3663.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3665.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3670.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3675.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3681.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3685.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3688.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3691.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3692.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3693.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3695.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3697.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3698.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3699.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3700.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3701.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3702.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3703.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3707.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3710.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3711.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3713.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3714.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3716.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3717.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3718.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3719.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3720.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3721.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3723.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3724.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3725.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3726.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3727.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3729.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3731.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3732.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3733.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3734.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3735.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3737.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3738.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3739.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3741.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3742.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3743.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3744.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3746.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3747.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3748.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3749.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3750.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3751.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3752.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3753.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3754.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3755.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3756.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3757.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3758.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3763.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3765.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3772.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3774.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3775.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3778.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3780.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3782.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3783.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3784.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3785.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3787.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3789.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3791.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3795.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3796.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3798.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3799.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3802.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3804.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3805.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3807.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3810.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3821.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3822.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3823.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3827.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3829.JPG" alt="">
+
+</div>
+</div>
+
+<div class="Flickity-images">
+  <h1 >Part-3 Images</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel"
+data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+
+<img src="./mahesh/Still 02/_DSC3831.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3834.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3836.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3837.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3841.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3843.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3845.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3848.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3849.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3850.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3851.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3852.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3853.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3854.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3855.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3857.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3858.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3859.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3860.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3861.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3862.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3863.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3864.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3865.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3866.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3867.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3868.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3870.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3872.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3874.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3875.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3876.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3877.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3878.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3879.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3888.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3889.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3892.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3893.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3895.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3896.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3897.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3898.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3900.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3902.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3903.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3904.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3910.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3915.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3917.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3919.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3921.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3923.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3924.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3925.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3926.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3928.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3930.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3931.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3933.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3935.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3939.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3940.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3941.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3942.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3943.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3945.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3944.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3946.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3947.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3950.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3951.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3952.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3953.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3954.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3955.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3956.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3958.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3959.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3961.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3962.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3963.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3964.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3965.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3967.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3968.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3969.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3970.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3972.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3974.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3976.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3977.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3978.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3979.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3980.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3981.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3982.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3983.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3984.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3985.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3986.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3987.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3988.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3989.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3990.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3991.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3993.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3996.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3994.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3997.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3998.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC3999.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4000.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4002.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4003.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4004.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4005.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4006.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4007.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4008.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4009.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4010.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4011.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4012.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4013.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4014.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4015.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4016.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4018.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4021.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4048.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4052.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4058.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4061.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4066.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4067.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4068.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4072.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4077.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4080.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4087.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4093.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4096.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4098.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4101.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4107.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4111.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4112.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4114.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4116.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4117.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4118.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4119.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4120.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4122.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4124.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4125.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4126.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4128.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4129.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4130.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4132.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4135.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4136.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4137.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4139.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4140.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4141.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4142.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4143.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4144.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4146.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4147.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4148.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4149.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4150.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4151.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4152.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4153.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4155.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4156.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4157.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4160.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4163.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4166.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4169.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4172.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4175.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4176.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4177.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4180.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4181.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4181.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4185.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4187.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4188.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4189.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4191.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4196.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4197.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4198.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4202.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4206.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4211.JPG" alt="">
+
+
+</div>
+</div>
+
+<div class="Flickity-images">
+  <h1 >Part-4 - images</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel"
+data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+<img src="./mahesh/Still 02/_DSC4213.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4227.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4228.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4231.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4235.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4239.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4244.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4254.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4258.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4265.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4266.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4273.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4280.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4284.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4288.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4295.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4296.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4298.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4299.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4301.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4304.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4312.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4314.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4315.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4317.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4320.JPG" alt="">
+<img src="./mahesh/Still 02/_DSC4324.JPG" alt="">
+</div>
+</div>
+
+
+<div class="Flickity-images">
+  <h1 >Special Focus and Pose</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel"
+data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+<img src="./mahesh/Still 03/_MG_3031.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3033.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3037.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3046.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3048.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3050.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3051.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3056.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3062.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3065.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3070.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3072.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3075.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3076.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3079.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3081.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3083.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3086.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3087.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3093.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3095.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3096.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3098.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3101.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3102.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3106.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3107.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3108.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3110.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3111.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3112.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3113.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3114.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3120.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3122.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3123.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3125.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3127.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3129.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3131.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3134.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3135.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3137.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3139.JPG" alt="">
+<img src="./mahesh/Still 03/_MG_3141.JPG" alt="">
+
+
+
+
+</div>
+</div>
+
+
+
+    <div class="container">
+        <div class="content">
+          <div class="box box1">
+            <div class="getInfo">
+              <h4>Get in Touch with us</h4>
+              <h2>Subscribe Now</h2>
+              <input type="email" required placeholder="Email"><br>
+              <button type="button">Subscribe</button><br>
+              <br>
+              <p>Read our <a href="#">Privacy Policy</a>.</p>
+            </div>
+            <div class="links">
+              <div class="link1 link">
+                <h3>Follow here</h3>
+                <a href="#">About Us</a>
+                <a href="#">Blog</a>
+                <a href="#">Leadership</a>
+                <a href="#">Partners</a>
+                <a href="#">Advertisement</a>
+                <a href="#">Documentation</a>
+                <a href="#">Support</a>
+              </div>
+              <div class="link2 link">
+                <h3>For You</h3>
+                <a href="#">FAQs</a>
+                <a href="#">Cookies</a>
+                <a href="#">Terms of Policy</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Help</a>
+              </div>
+              <div class="link3 link">
+                <h3>Quick Links</h3>
+                <p>Website: <br><a href="https://virender876.github.io/vir/">https://virender876.github.io/vir/</a></p>
+                <p>Blog: <br><a href="https://virender876.github.io/vir/">https://virender876.github.io/vir/</a></p>
+                <p>Photo Gallery: <br><a href="https://virender876.github.io/vir/">https://virender876.github.io/vir/</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="box box2">
+            <h1>BigFOOTER</h1>
+          </div>
+          <div class="box box3">
+            <div class="about">
+              <div class="main">
+                <h1>About Us</h1>
+                <p><i>We are presenting footer design. Let's manipulate something and make people notice footer too!!!
+                    Liked the idea? Do try the Challenges!!! Not just for developing ideas but for fun too!!!
+                  </i></p>
+                <br>
+                <p><i>We are presenting footer design. Let's manipulate something and make people notice footer too!!!
+                    Liked the idea? Do try the Challenges!!! Not just for developing ideas but for fun too!!!
+                  </i></p><br>
+                <p><i>We are presenting footer design. Let's manipulate something and make people notice footer too!!!
+                    Liked the idea? Do try the Challenges!!! Not just for developing ideas but for fun too!!!
+                  </i></p>
+              </div>
+              <div class="f_social_icon">
+                <h2>follow us</h2>
+                <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-whatsapp"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-youtube"></a>  
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</body>
+</html>

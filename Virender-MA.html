@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIRENPOOJA MARRIAGE ALBUM</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="phone.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="./min.css">
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Francois+One&display=swap");
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: "Francois One", sans-serif;
+user-select: none;
+}
+a {
+text-decoration: none;
+}
+.container {
+min-height: 100vh;
+width: 100%;
+display: flex;
+align-items: center;
+background-color: #141414;
+color: white;
+}
+.content {
+display: flex;
+align-items: center;
+height: 100vh;
+width: 100%;
+}
+.container 
+img {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+}
+.box1 {
+width: 90%;
+height: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+background-color: #fba92c;
+}
+.getInfo {
+width: 90%;
+min-height: 200px;
+background-color: rgba(255, 255, 255, 0.2);
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+background-color: black;
+padding: 10px;
+border-radius: 0 10px 10px 10px;
+box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+margin-top: 25px;
+}
+.getInfo h4 {
+font-size: 20px;
+}
+.getInfo h2 {
+color: #fba92c;
+font-size: 40px;
+}
+input[type="email"],
+button {
+width: 100%;
+height: 40px;
+border: 2px solid transparent;
+outline: none;
+padding: 0 5px;
+}
+button {
+background-color: #fba92c;
+font-size: 18px;
+cursor: pointer;
+}
+button:hover {
+background-color: crimson;
+}
+.getInfo p {
+color: white;
+}
+.getInfo p a {
+color: crimson;
+}
+.box2 {
+width: 70px;
+display: flex;
+align-items: center;
+height: 100%;
+background-color: white;
+box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.box2 h1 {
+font-size: 60px;
+transform: rotate(-90deg);
+position: relative;
+left: -120px;
+letter-spacing: 5px;
+color: black;
+}
+.box3 {
+width: auto;
+height: 100%;
+}
+.links {
+margin-top: 25px;
+margin-bottom: 25px;
+min-width: 90%;
+display: flex;
+justify-content: space-evenly;
+min-height: 200px;
+background-color: black;
+padding: 10px;
+border-radius: 10px 0 10px 10px;
+box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+.link {
+width: 30%;
+display: flex;
+flex-direction: column;
+}
+.link h3 {
+color: white;
+font-size: 22px;
+}
+.link a {
+color: #fba92c;
+}
+.link a:hover {
+color: crimson;
+}
+.about {
+display: flex;
+flex-direction: column;
+height: 100%;
+justify-content: center;
+}
+.main {
+min-height: 300px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding: 20px;
+}
+.main h1 {
+font-size: 60px;
+color: white;
+}
+.main p {
+font-size: 15px;
+color: #fba92c;
+}
+.bottom {
+display: flex;
+width: 100%;
+align-items: center;
+justify-content: center;
+height: 100px;
+}
+.media {
+padding: 10px;
+transition: 0.2s linear;
+}
+.media:hover {
+transform: translateY(-10px);
+}
+@media only screen and (max-width: 900px) {
+.content {
+  flex-direction: column;
+  min-height: 250vh;
+}
+.box2 {
+  width: 100%;
+}
+.box2 h1 {
+  transform: rotate(0);
+  font-size: 50px;
+  left: 0;
+}
+.links {
+  flex-direction: column;
+}
+.link {
+  width: 90%;
+}
+}
+.f_social_icon a:hover {
+      background: #5e2ced;
+      border-color: #5e2ced;
+    color:white;
+  }
+  .new_footer_top .f_social_icon a + a {
+      margin-left: 4px;
+  }
+  .f_social_icon{
+   padding-left: 250px;
+  
+}
+.fab{
+    color:red;
+}
+
+.dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  .dropdown a{
+    font-size: 15px;
+  }
+  .dropdown li {
+    padding: 0.1em .5em;
+    width: 20em;
+    text-align: center;
+  }
+
+
+  </style>
+   
+</head>
+<body>
+
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">VIR_ALBUM</div>
+
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- USING CHECKBOX HACK -->
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a href="/">Home</a></li>
+        <li><a href="/">About</a></li>
+
+        <li class="services">
+          <a href="/">Album-Services</a>
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="Virender-MA.html" style="color: #e48509;">VIRENDER_POOJA MARRIAGE </a></li>
+            <li><a href="Mahesh-MA.html" style="color: #2cfb44;">MAHESH_RAKESH MARRIAGE</a></li>
+            <li><a href="Suresh_MA.html" style="color: #e62cfb;">SURESH_POONAM MARRIAGE</a></li>
+            <li><a href="Pawan.html" style="color: #fbed2c;">PAWAN MARRIAGE</a></li>
+            <li><a href="/" style="color: #fb2c2c;">Dropdown 5</a></li>
+          </ul>
+
+        </li>
+
+        <li><a href="/">Pricing</a></li>
+        <li><a href="/">Contact</a></li>
+      </div>
+    </ul>
+  </nav>
+<div class="Flickity-images photo">
+ 
+    <h1>Shadi - images Part 1</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel"
+  data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+<img src="/01/BDS_3327.JPG" alt="">
+<img src="/01/BDS_3328.JPG" alt="">
+<img src="/01/BDS_3330.JPG" alt="">
+<img src="/01/BDS_3331.JPG" alt="">
+<img src="/01/BDS_3333.JPG" alt="">
+<img src="/01/BDS_3334.JPG" alt="">
+<img src="/01/BDS_3336.JPG" alt="">
+<img src="/01/BDS_3338.JPG" alt="">
+<img src="/01/BDS_3339.JPG" alt="">
+<img src="/01/BDS_3340.JPG" alt="">
+<img src="/01/BDS_3344.JPG" alt="">
+<img src="/01/BDS_3342.JPG" alt="">
+<img src="/01/BDS_3346.JPG" alt="">
+<img src="/01/BDS_3347.JPG" alt="">
+<img src="/01/BDS_3353.JPG" alt="">
+<img src="/01/BDS_3357.JPG" alt="">
+<img src="/01/BDS_3359.JPG" alt="">
+<img src="/01/BDS_3360.JPG" alt="">
+<img src="/01/BDS_3370.JPG" alt="">
+<img src="/01/BDS_3371.JPG" alt="">
+<img src="/01/BDS_3373.JPG" alt="">
+<img src="/01/BDS_3376.JPG" alt="">
+<img src="/01/BDS_3380.JPG" alt="">
+<img src="/01/BDS_3381.JPG" alt="">
+<img src="/01/BDS_3383.JPG" alt="">
+<img src="/01/BDS_3389.JPG" alt="">
+<img src="/01/BDS_3397.JPG" alt="">
+</div>
+</div>
+
+<div class="Flickity-images">
+  <h1>Shadi - images Part 2</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel "
+data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+<img src="./02/BDS_4806.JPG" alt="">
+<img src="./02/BDS_4809.JPG" alt="">
+<img src="./02/BDS_4810.JPG" alt="">
+<img src="./02/BDS_4812.JPG" alt="">
+<img src="./02/BDS_4813.JPG" alt="">
+<img src="./02/BDS_4814.JPG" alt="">
+<img src="./02/BDS_4815.JPG" alt="">
+<img src="./02/BDS_4816.JPG" alt="">
+<img src="./02/BDS_4818.JPG" alt="">
+<img src="./02/BDS_4821.JPG" alt="">
+<img src="./02/BDS_4822.JPG" alt="">
+<img src="./02/BDS_4823.JPG" alt="">
+<img src="./02/BDS_4824.JPG" alt="">
+<img src="./02/BDS_4825.JPG" alt="">
+<img src="./02/BDS_4826.JPG" alt="">
+<img src="./02/BDS_4827.JPG" alt="">
+<img src="./02/BDS_4832.JPG" alt="">
+<img src="./02/BDS_4834.JPG" alt="">
+<img src="./02/BDS_4836.JPG" alt="">
+<img src="./02/BDS_4837.JPG" alt="">
+<img src="./02/BDS_4838.JPG" alt="">
+<img src="./02/BDS_4839.JPG" alt="">
+<img src="./02/BDS_4840.JPG" alt="">
+<img src="./02/BDS_4841.JPG" alt="">
+<img src="./02/BDS_4842.JPG" alt="">
+<img src="./02/BDS_4843.JPG" alt="">
+<img src="./02/BDS_4844.JPG" alt="">
+<img src="./02/BDS_4845.JPG" alt="">
+<img src="./02/BDS_4846.JPG" alt="">
+<img src="./02/BDS_4847.JPG" alt="">
+<img src="./02/BDS_4860.JPG" alt="">
+<img src="./02/BDS_4861.JPG" alt="">
+<img src="./02/BDS_4862.JPG" alt="">
+<img src="./02/BDS_4872.JPG" alt="">
+<img src="./02/BDS_4873.JPG" alt="">
+<img src="./02/BDS_4874.JPG" alt="">
+<img src="./02/BDS_4876.JPG" alt="">
+<img src="./02/BDS_4877.JPG" alt="">
+<img src="./02/BDS_4878.JPG" alt="">
+<img src="./02/BDS_4879.JPG" alt="">
+<img src="./02/BDS_4880.JPG" alt="">
+<img src="./02/BDS_4881.JPG" alt="">
+<img src="./02/BDS_4882.JPG" alt="">
+<img src="./02/BDS_4883.JPG" alt="">
+<img src="./02/BDS_4884.JPG" alt="">
+<img src="./02/BDS_4885.JPG" alt="">
+<img src="./02/BDS_4886.JPG" alt="">
+<img src="./02/BDS_4887.JPG" alt="">
+<img src="./02/BDS_4888.JPG" alt="">
+<img src="./02/BDS_4889.JPG" alt="">
+<img src="./02/BDS_4891.JPG" alt="">
+<img src="./02/BDS_4893.JPG" alt="">
+<img src="./02/BDS_4894.JPG" alt="">
+<img src="./02/BDS_4896.JPG" alt="">
+<img src="./02/BDS_4897.JPG" alt="">
+<img src="./02/BDS_4898.JPG" alt="">
+<img src="./02/BDS_4900.JPG" alt="">
+<img src="./02/BDS_4901.JPG" alt="">
+<img src="./02/BDS_4903.JPG" alt="">
+<img src="./02/BDS_4904.JPG" alt="">
+<img src="./02/BDS_4905.JPG" alt="">
+<img src="./02/BDS_4906.JPG" alt="">
+<img src="./02/BDS_4907.JPG" alt="">
+<img src="./02/BDS_4908.JPG" alt="">
+<img src="./02/BDS_4909.JPG" alt="">
+<img src="./02/BDS_4910.JPG" alt="">
+<img src="./02/BDS_4912.JPG" alt="">
+<img src="./02/BDS_4913.JPG" alt="">
+<img src="./02/BDS_4917.JPG" alt="">
+<img src="./02/BDS_4918.JPG" alt="">
+<img src="./02/BDS_4919.JPG" alt="">
+<img src="./02/BDS_4920.JPG" alt="">
+<img src="./02/BDS_4921.JPG" alt="">
+<img src="./02/BDS_4922.JPG" alt="">
+<img src="./02/BDS_4923.JPG" alt="">
+<img src="./02/BDS_4924.JPG" alt="">
+<img src="./02/BDS_4926.JPG" alt="">
+<img src="./02/BDS_4927.JPG" alt="">
+<img src="./02/BDS_4928.JPG" alt="">
+<img src="./02/BDS_4929.JPG" alt="">
+<img src="./02/BDS_4931.JPG" alt="">
+<img src="./02/BDS_4932.JPG" alt="">
+<img src="./02/BDS_4933.JPG" alt="">
+<img src="./02/BDS_4934.JPG" alt="">
+<img src="./02/BDS_4935.JPG" alt="">
+<img src="./02/BDS_4936.JPG" alt="">
+<img src="./02/BDS_4938.JPG" alt="">
+<img src="./02/BDS_4940.JPG" alt="">
+<img src="./02/BDS_4941.JPG" alt="">
+<img src="./02/BDS_4943.JPG" alt="">
+<img src="./02/BDS_4942.JPG" alt="">
+<img src="./02/BDS_4945.JPG" alt="">
+<img src="./02/BDS_4946.JPG" alt="">
+<img src="./02/BDS_4947.JPG" alt="">
+<img src="./02/BDS_4948.JPG" alt="">
+<img src="./02/BDS_4949.JPG" alt="">
+<img src="./02/BDS_4950.JPG" alt="">
+<img src="./02/BDS_4952.JPG" alt="">
+<img src="./02/BDS_4953.JPG" alt="">
+<img src="./02/BDS_4954.JPG" alt="">
+<img src="./02/BDS_4955.JPG" alt="">
+<img src="./02/BDS_4956.JPG" alt="">
+<img src="./02/BDS_4957.JPG" alt="">
+<img src="./02/BDS_4958.JPG" alt="">
+<img src="./02/BDS_4960.JPG" alt="">
+<img src="./02/BDS_4962.JPG" alt="">
+<img src="./02/BDS_4965.JPG" alt="">
+<img src="./02/BDS_4968.JPG" alt="">
+<img src="./02/BDS_4969.JPG" alt="">
+<img src="./02/BDS_4970.JPG" alt="">
+<img src="./02/BDS_4972.JPG" alt="">
+<img src="./02/BDS_4974.JPG" alt="">
+<img src="./02/BDS_4976.JPG" alt="">
+<img src="./02/BDS_4979.JPG" alt="">
+<img src="./02/BDS_4983.JPG" alt="">
+<img src="./02/BDS_4985.JPG" alt="">
+<img src="./02/BDS_4986.JPG" alt="">
+<img src="./02/BDS_4987.JPG" alt="">
+<img src="./02/BDS_4988.JPG" alt="">
+<img src="./02/BDS_4989.JPG" alt="">
+<img src="./02/BDS_4990.JPG" alt="">
+<img src="./02/BDS_4991.JPG" alt="">
+<img src="./02/BDS_4993.JPG" alt="">
+<img src="./02/BDS_4994.JPG" alt="">
+<img src="./02/BDS_4995.JPG" alt="">
+<img src="./02/BDS_4996.JPG" alt="">
+<img src="./02/BDS_4998.JPG" alt="">
+<img src="./02/BDS_5000.JPG" alt="">
+<img src="./02/BDS_5003.JPG" alt="">
+<img src="./02/BDS_5004.JPG" alt="">
+<img src="./02/BDS_5005.JPG" alt="">
+
+</div>
+</div>
+
+<div class="Flickity-images">
+  <h1>Ready for Destination</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel "
+data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+<img src="./02/BDS_5009.JPG" alt="">
+<img src="./02/BDS_5014.JPG" alt="">
+<img src="./02/BDS_5012.JPG" alt="">
+<img src="./02/BDS_5015.JPG" alt="">
+<img src="./02/BDS_5016.JPG" alt="">
+<img src="./02/BDS_5018.JPG" alt="">
+<img src="./02/BDS_5020.JPG" alt="">
+<img src="./02/BDS_5027.JPG" alt="">
+<img src="./02/BDS_5028.JPG" alt="">
+<img src="./02/BDS_5029.JPG" alt="">
+<img src="./02/BDS_5030.JPG" alt="">
+<img src="./02/BDS_5031.JPG" alt="">
+<img src="./02/BDS_5032.JPG" alt="">
+<img src="./02/BDS_5033.JPG" alt="">
+<img src="./02/BDS_5034.JPG" alt="">
+<img src="./02/BDS_5035.JPG" alt="">
+<img src="./02/BDS_5036.JPG" alt="">
+<img src="./02/BDS_5037.JPG" alt="">
+<img src="./02/BDS_5038.JPG" alt="">
+<img src="./02/BDS_5040.JPG" alt="">
+<img src="./02/BDS_5042.JPG" alt="">
+<img src="./02/BDS_5044.JPG" alt="">
+<img src="./02/BDS_5045.JPG" alt="">
+<img src="./02/BDS_5047.JPG" alt="">
+<img src="./02/BDS_5048.JPG" alt="">
+<img src="./02/BDS_5051.JPG" alt="">
+<img src="./02/BDS_5052.JPG" alt="">
+<img src="./02/BDS_5053.JPG" alt="">
+<img src="./02/BDS_5055.JPG" alt="">
+<img src="./02/BDS_5056.JPG" alt="">
+<img src="./02/BDS_5057.JPG" alt="">
+<img src="./02/BDS_5058.JPG" alt="">
+<img src="./02/BDS_5060.JPG" alt="">
+<img src="./02/BDS_5061.JPG" alt="">
+<img src="./02/BDS_5063.JPG" alt="">
+<img src="./02/BDS_5064.JPG" alt="">
+<img src="./02/BDS_5065.JPG" alt="">
+<img src="./02/BDS_5066.JPG" alt="">
+<img src="./02/BDS_5068.JPG" alt="">
+<img src="./02/BDS_5069.JPG" alt="">
+<img src="./02/BDS_5070.JPG" alt="">
+<img src="./02/BDS_5071.JPG" alt="">
+<img src="./02/BDS_5073.JPG" alt="">
+<img src="./02/BDS_5075.JPG" alt="">
+<img src="./02/BDS_5076.JPG" alt="">
+<img src="./02/BDS_5077.JPG" alt="">
+<img src="./02/BDS_5079.JPG" alt="">
+<img src="./02/BDS_5081.JPG" alt="">
+<img src="./02/BDS_5082.JPG" alt="">
+<img src="./02/BDS_5083.JPG" alt="">
+<img src="./02/BDS_5084.JPG" alt="">
+<img src="./02/BDS_5087.JPG" alt="">
+<img src="./02/BDS_5089.JPG" alt="">
+<img src="./02/BDS_5091.JPG" alt="">
+<img src="./02/BDS_5092.JPG" alt="">
+<img src="./02/BDS_5094.JPG" alt="">
+<img src="./02/BDS_5097.JPG" alt="">
+<img src="./02/BDS_5098.JPG" alt="">
+<img src="./02/BDS_5101.JPG" alt="">
+<img src="./02/BDS_5102.JPG" alt="">
+<img src="./02/BDS_5103.JPG" alt="">
+<img src="./02/BDS_5106.JPG" alt="">
+<img src="./02/BDS_5108.JPG" alt="">
+<img src="./02/BDS_5111.JPG" alt="">
+<img src="./02/BDS_5116.JPG" alt="">
+<img src="./02/BDS_5117.JPG" alt="">
+<img src="./02/BDS_5123.JPG" alt="">
+<img src="./02/BDS_5124.JPG" alt="">
+<img src="./02/BDS_5125.JPG" alt="">
+<img src="./02/BDS_5127.JPG" alt="">
+<img src="./02/BDS_5129.JPG" alt="">
+<img src="./02/BDS_5130.JPG" alt="">
+<img src="./02/BDS_5132.JPG" alt="">
+<img src="./02/BDS_5134.JPG" alt="">
+<img src="./02/BDS_5136.JPG" alt="">
+<img src="./02/BDS_5137.JPG" alt="">
+<img src="./02/BDS_5139.JPG" alt="">
+<img src="./02/BDS_5141.JPG" alt="">
+<img src="./02/BDS_5142.JPG" alt="">
+<img src="./02/BDS_5144.JPG" alt="">
+<img src="./02/BDS_5145.JPG" alt="">
+<img src="./02/BDS_5146.JPG" alt="">
+<img src="./02/BDS_5147.JPG" alt="">
+<img src="./02/BDS_5148.JPG" alt="">
+<img src="./02/BDS_5150.JPG" alt="">
+<img src="./02/BDS_5153.JPG" alt="">
+<img src="./02/BDS_5152.JPG" alt="">
+<img src="./02/BDS_5154.JPG" alt="">
+<img src="./02/BDS_5155.JPG" alt="">
+<img src="./02/BDS_5156.JPG" alt="">
+<img src="./02/BDS_5157.JPG" alt="">
+<img src="./02/BDS_5158.JPG" alt="">
+<img src="./02/BDS_5159.JPG" alt="">
+<img src="./02/BDS_5160.JPG" alt="">
+<img src="./02/BDS_5167.JPG" alt="">
+<img src="./02/BDS_5169.JPG" alt="">
+<img src="./02/BDS_5171.JPG" alt="">
+<img src="./02/BDS_5172.JPG" alt="">
+<img src="./02/BDS_5174.JPG" alt="">
+<img src="./02/BDS_5177.JPG" alt="">
+<img src="./02/BDS_5179.JPG" alt="">
+<img src="./02/BDS_5180.JPG" alt="">
+<img src="./02/BDS_5181.JPG" alt="">
+<img src="./02/BDS_5183.JPG" alt="">
+<img src="./02/BDS_5184.JPG" alt="">
+<img src="./02/BDS_5185.JPG" alt="">
+<img src="./02/BDS_5187.JPG" alt="">
+<img src="./02/BDS_5189.JPG" alt="">
+<img src="./02/BDS_5191.JPG" alt="">
+<img src="./02/BDS_5193.JPG" alt="">
+<img src="./02/BDS_5194.JPG" alt="">
+<img src="./02/BDS_5199.JPG" alt="">
+
+
+
+
+</div>
+</div>
+
+
+<div class="Flickity-images">
+  <h1>At Destination</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel "
+data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+<img src="./02/BDS_5206.JPG" alt="">
+<img src="./02/BDS_5210.JPG" alt="">
+<img src="./02/BDS_5212.JPG" alt="">
+<img src="./02/BDS_5216.JPG" alt="">
+<img src="./02/BDS_5219.JPG" alt="">
+<img src="./02/BDS_5224.JPG" alt="">
+<img src="./02/BDS_5227.JPG" alt="">
+<img src="./02/BDS_5231.JPG" alt="">
+<img src="./02/BDS_5235.JPG" alt="">
+<img src="./02/BDS_5238.JPG" alt="">
+<img src="./02/BDS_5241.JPG" alt="">
+<img src="./02/BDS_5243.JPG" alt="">
+<img src="./02/BDS_5244.JPG" alt="">
+<img src="./02/BDS_5245.JPG" alt="">
+<img src="./02/BDS_5254.JPG" alt="">
+<img src="./02/BDS_5255.JPG" alt="">
+<img src="./02/BDS_5257.JPG" alt="">
+<img src="./02/BDS_5261.JPG" alt="">
+<img src="./02/BDS_5270.JPG" alt="">
+<img src="./02/BDS_5282.JPG" alt="">
+<img src="./02/BDS_5283.JPG" alt="">
+<img src="./02/BDS_5288.JPG" alt="">
+<img src="./02/BDS_5289.JPG" alt="">
+<img src="./02/BDS_5293.JPG" alt="">
+<img src="./02/BDS_5299.JPG" alt="">
+<img src="./02/BDS_5302.JPG" alt="">
+<img src="./02/BDS_5303.JPG" alt="">
+<img src="./02/BDS_5304.JPG" alt="">
+<img src="./02/BDS_5305.JPG" alt="">
+<img src="./02/BDS_5308.JPG" alt="">
+<img src="./02/BDS_5309.JPG" alt="">
+<img src="./02/BDS_5311.JPG" alt="">
+<img src="./02/BDS_5312.JPG" alt="">
+<img src="./02/BDS_5314.JPG" alt="">
+<img src="./02/BDS_5315.JPG" alt="">
+<img src="./02/BDS_5316.JPG" alt="">
+<img src="./02/BDS_5317.JPG" alt="">
+<img src="./02/BDS_5318.JPG" alt="">
+<img src="./02/BDS_5329.JPG" alt="">
+<img src="./02/BDS_5335.JPG" alt="">
+<img src="./02/BDS_5343.JPG" alt="">
+<img src="./02/BDS_5345.JPG" alt="">
+<img src="./02/BDS_5351.JPG" alt="">
+<img src="./02/BDS_5352.JPG" alt="">
+<img src="./02/BDS_5354.JPG" alt="">
+<img src="./02/BDS_5356.JPG" alt="">
+<img src="./02/BDS_5359.JPG" alt="">
+<img src="./02/BDS_5361.JPG" alt="">
+<img src="./02/BDS_5362.JPG" alt="">
+<img src="./02/BDS_5363.JPG" alt="">
+<img src="./02/BDS_5365.JPG" alt="">
+<img src="./02/BDS_5369.JPG" alt="">
+<img src="./02/BDS_5373.JPG" alt="">
+<img src="./02/BDS_5375.JPG" alt="">
+<img src="./02/BDS_5379.JPG" alt="">
+<img src="./02/BDS_5382.JPG" alt="">
+<img src="./02/BDS_5387.JPG" alt="">
+<img src="./02/BDS_5391.JPG" alt="">
+<img src="./02/BDS_5397.JPG" alt="">
+<img src="./02/BDS_5407.JPG" alt="">
+<img src="./02/BDS_5409.JPG" alt="">
+<img src="./02/BDS_5413.JPG" alt="">
+<img src="./02/BDS_5414.JPG" alt="">
+<img src="./02/BDS_5415.JPG" alt="">
+<img src="./02/BDS_5416.JPG" alt="">
+<img src="./02/BDS_5417.JPG" alt="">
+<img src="./02/BDS_5419.JPG" alt="">
+<img src="./02/BDS_5420.JPG" alt="">
+<img src="./02/BDS_5424.JPG" alt="">
+<img src="./02/BDS_5429.JPG" alt="">
+<img src="./02/BDS_5430.JPG" alt="">
+<img src="./02/BDS_5431.JPG" alt="">
+<img src="./02/BDS_5433.JPG" alt="">
+<img src="./02/BDS_5434.JPG" alt="">
+<img src="./02/BDS_5436.JPG" alt="">
+<img src="./02/BDS_5437.JPG" alt="">
+<img src="./02/BDS_5438.JPG" alt="">
+<img src="./02/BDS_5439.JPG" alt="">
+<img src="./02/BDS_5440.JPG" alt="">
+<img src="./02/BDS_5441.JPG" alt="">
+<img src="./02/BDS_5442.JPG" alt="">
+<img src="./02/BDS_5443.JPG" alt="">
+<img src="./02/BDS_5445.JPG" alt="">
+<img src="./02/BDS_5446.JPG" alt="">
+<img src="./02/BDS_5448.JPG" alt="">
+<img src="./02/BDS_5449.JPG" alt="">
+<img src="./02/BDS_5451.JPG" alt="">
+<img src="./02/BDS_5453.JPG" alt="">
+<img src="./02/BDS_5456.JPG" alt="">
+<img src="./02/BDS_5460.JPG" alt="">
+<img src="./02/BDS_5460.JPG" alt="">
+<img src="./02/BDS_5460.JPG" alt="">
+<img src="./02/BDS_5460.JPG" alt="">
+<img src="./02/BDS_5460.JPG" alt="">
+<img src="./02/BDS_5460.JPG" alt="">
+<img src="./02/BDS_5461.JPG" alt="">
+<img src="./02/BDS_5466.JPG" alt="">
+<img src="./02/BDS_5468.JPG" alt="">
+<img src="./02/BDS_5470.JPG" alt="">
+<img src="./02/BDS_5471.JPG" alt="">
+<img src="./02/BDS_5476.JPG" alt="">
+<img src="./02/BDS_5477.JPG" alt="">
+<img src="./02/BDS_5478.JPG" alt="">
+<img src="./02/BDS_5479.JPG" alt="">
+<img src="./02/BDS_5480.JPG" alt="">
+<img src="./02/BDS_5482.JPG" alt="">
+<img src="./02/BDS_5484.JPG" alt="">
+<img src="./02/BDS_5485.JPG" alt="">
+<img src="./02/BDS_5486.JPG" alt="">
+<img src="./02/BDS_5487.JPG" alt="">
+<img src="./02/BDS_5502.JPG" alt="">
+<img src="./02/BDS_5515.JPG" alt="">
+<img src="./02/BDS_5517.JPG" alt="">
+<img src="./02/BDS_5522.JPG" alt="">
+<img src="./02/BDS_5525.JPG" alt="">
+<img src="./02/BDS_5526.JPG" alt="">
+<img src="./02/BDS_5528.JPG" alt="">
+<img src="./02/BDS_5529.JPG" alt="">
+<img src="./02/BDS_5530.JPG" alt="">
+<img src="./02/BDS_5537.JPG" alt="">
+<img src="./02/BDS_5541.JPG" alt="">
+<img src="./02/BDS_5547.JPG" alt="">
+<img src="./02/BDS_5550.JPG" alt="">
+<img src="./02/BDS_5551.JPG" alt="">
+<img src="./02/BDS_5552.JPG" alt="">
+<img src="./02/BDS_5553.JPG" alt="">
+<img src="./02/BDS_5554.JPG" alt="">
+<img src="./02/BDS_5555.JPG" alt="">
+<img src="./02/BDS_5556.JPG" alt="">
+<img src="./02/BDS_5557.JPG" alt="">
+<img src="./02/BDS_5558.JPG" alt="">
+<img src="./02/BDS_5559.JPG" alt="">
+<img src="./02/BDS_5560.JPG" alt="">
+<img src="./02/BDS_5561.JPG" alt="">
+<img src="./02/BDS_5562.JPG" alt="">
+<img src="./02/BDS_5563.JPG" alt="">
+<img src="./02/BDS_5564.JPG" alt="">
+<img src="./02/BDS_5565.JPG" alt="">
+<img src="./02/BDS_5566.JPG" alt="">
+<img src="./02/BDS_5567.JPG" alt="">
+<img src="./02/BDS_5568.JPG" alt="">
+<img src="./02/BDS_5569.JPG" alt="">
+<img src="./02/BDS_5570.JPG" alt="">
+<img src="./02/BDS_5571.JPG" alt="">
+<img src="./02/BDS_5573.JPG" alt="">
+<img src="./02/BDS_5574.JPG" alt="">
+<img src="./02/BDS_5575.JPG" alt="">
+<img src="./02/BDS_5576.JPG" alt="">
+<img src="./02/BDS_5577.JPG" alt="">
+<img src="./02/BDS_5578.JPG" alt="">
+<img src="./02/BDS_5585.JPG" alt="">
+<img src="./02/BDS_5592.JPG" alt="">
+<img src="./02/BDS_5593.JPG" alt="">
+<img src="./02/BDS_5594.JPG" alt="">
+<img src="./02/BDS_5595.JPG" alt="">
+<img src="./02/BDS_5596.JPG" alt="">
+<img src="./02/BDS_5597.JPG" alt="">
+<img src="./02/BDS_5598.JPG" alt="">
+<img src="./02/BDS_5599.JPG" alt="">
+<img src="./02/BDS_5600.JPG" alt="">
+<img src="./02/BDS_5601.JPG" alt="">
+<img src="./02/BDS_5602.JPG" alt="">
+<img src="./02/BDS_5603.JPG" alt="">
+<img src="./02/BDS_5604.JPG" alt="">
+<img src="./02/BDS_5605.JPG" alt="">
+<img src="./02/BDS_5606.JPG" alt="">
+<img src="./02/BDS_5607.JPG" alt="">
+<img src="./02/BDS_5608.JPG" alt="">
+<img src="./02/BDS_5609.JPG" alt="">
+<img src="./02/BDS_5610.JPG" alt="">
+<img src="./02/BDS_5611.JPG" alt="">
+<img src="./02/BDS_5612.JPG" alt="">
+<img src="./02/BDS_5613.JPG" alt="">
+<img src="./02/BDS_5614.JPG" alt="">
+<img src="./02/BDS_5615.JPG" alt="">
+<img src="./02/BDS_5616.JPG" alt="">
+<img src="./02/BDS_5617.JPG" alt="">
+<img src="./02/BDS_5619.JPG" alt="">
+<img src="./02/BDS_5620.JPG" alt="">
+<img src="./02/BDS_5627.JPG" alt="">
+<img src="./02/BDS_5629.JPG" alt="">
+<img src="./02/BDS_5633.JPG" alt="">
+<img src="./02/BDS_5634.JPG" alt="">
+<img src="./02/BDS_5635.JPG" alt="">
+<img src="./02/BDS_5641.JPG" alt="">
+<img src="./02/BDS_5677.JPG" alt="">
+
+</div>
+</div>
+
+<div class="Flickity-images">
+  <h1>FINAL-TOUCH</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel "
+data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+<img src="./virender marriage photo and video/3/BDS_5642.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5643.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5644.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5645.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5646.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5647.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5648.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5651.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5652.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5653.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5654.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5655.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5656.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5658.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5660.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5661.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5662.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5664.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5666.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5667.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5675.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5676.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5677.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5679.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5680.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5681.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5682.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5683.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5688.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5694.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5695.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5696.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5699.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5703.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5704.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5707.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5708.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5709.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5710.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5711.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5713.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5714.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5720.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5726.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5732.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5733.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5737.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5740.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5742.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5749.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5750.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5756.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5761.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5764.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5776.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5779.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5781.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5785.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5786.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5788.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5790.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5791.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5792.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5793.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5795.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5800.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5802.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5803.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5806.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5807.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5810.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5813.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5815.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5816.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5818.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5820.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5822.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5824.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5825.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5826.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5827.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5828.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5829.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5831.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5832.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5833.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5835.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5836.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5837.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5838.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5841.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5842.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5845.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5846.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5848.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5849.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5853.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5857.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5859.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5863.JPG" alt="">
+<img src="./virender marriage photo and video/3/BDS_5867.JPG" alt="">
+
+</div>
+</div>
+
+<div class="Flickity-images">
+  <h1>SPECIAL FOCUSS</h1>
+
+<!-- Flickity HTML init -->
+<div class="carousel"
+data-flickity='{ "imagesLoaded": true, "percentPosition": false }'>
+<img src="/virender marriage photo and video/4/IMG_5241.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5242.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5043.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4782.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4783.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4785.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4787.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4790.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4792.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4793.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4794.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4800.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4808.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4812.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4815.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4817.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4821.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4822.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4823.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4824.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4826.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4830.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4832.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4836.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4843.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4846.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4847.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4848.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4850.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4864.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4865.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4873.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4878.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4880.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4882.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4884.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4904.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4912.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4919.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4930.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4942.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4943.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4945.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4956.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4964.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4966.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4982.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4983.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4984.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4988.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4991.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4993.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_4996.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5003.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5010.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5015.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5016.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5020.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5021.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5022.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5028.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5031.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5034.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5043.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5053.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5059.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5061.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5062.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5065.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5067.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5072.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5074.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5076.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5077.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5081.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5088.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5089.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5094.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5100.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5102.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5105.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5107.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5116.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5119.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5125.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5141.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5144.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5147.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5150.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5158.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5160.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5166.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5169.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5183.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5196.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5199.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5206.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5207.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5209.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5213.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5214.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5217.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5218.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5219.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5224.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5225.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5226.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5227.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5228.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5229.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5230.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5232.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5235.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5241.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5242.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5243.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5260.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5262.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5265.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5268.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5293.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5303.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5318.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5321.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5326.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5327.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5333.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5341.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5344.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5345.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5352.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5353.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5356.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5357.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5358.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5363.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5369.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5371.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5377.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5383.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5384.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5387.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5388.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5394.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5415.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5420.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5341.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5443.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5450.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5453.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5456.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5464.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5475.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5478.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5479.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5481.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5494.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5511.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5512.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5514.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5521.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5523.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5529.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5531.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5533.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5536.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5537.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5541.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5543.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5544.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5547.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5552.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5553.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5554.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5556.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5560.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5561.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5562.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5592.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5631.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5633.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5767.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5770.JPG" alt="">
+<img src="/virender marriage photo and video/4/IMG_5772.JPG" alt="">
+
+
+</div>
+
+</div>
+
+<div class="container">
+  <div class="content">
+    <div class="box box1">
+      <div class="getInfo">
+        <h4>Get in Touch with us</h4>
+        <h2>Subscribe Now</h2>
+        <input type="email" required placeholder="Email"><br>
+        <button type="button">Subscribe</button><br>
+        <br>
+        <p>Read our <a href="#">Privacy Policy</a>.</p>
+      </div>
+      <div class="links">
+        <div class="link1 link">
+          <h3>Follow here</h3>
+          <a href="#">About Us</a>
+          <a href="#">Blog</a>
+          <a href="#">Leadership</a>
+          <a href="#">Partners</a>
+          <a href="#">Advertisement</a>
+          <a href="#">Documentation</a>
+          <a href="#">Support</a>
+        </div>
+        <div class="link2 link">
+          <h3>For You</h3>
+          <a href="#">FAQs</a>
+          <a href="#">Cookies</a>
+          <a href="#">Terms of Policy</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="link3 link">
+          <h3>Quick Links</h3>
+          <p>Website: <br><a href="https://virender876.github.io/vir/">https://virender876.github.io/vir/</a></p>
+          <p>Blog: <br><a href="https://virender876.github.io/vir/">https://virender876.github.io/vir/</a></p>
+          <p>Photo Gallery: <br><a href="https://virender876.github.io/vir/">https://virender876.github.io/vir/</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="box box2">
+      <h1>BigFOOTER</h1>
+    </div>
+    <div class="box box3">
+      <div class="about">
+        <div class="main">
+          <h1>About Us</h1>
+          <p><i>We are presenting footer design. Let's manipulate something and make people notice footer too!!!
+              Liked the idea? Do try the Challenges!!! Not just for developing ideas but for fun too!!!
+            </i></p>
+          <br>
+          <p><i>We are presenting footer design. Let's manipulate something and make people notice footer too!!!
+              Liked the idea? Do try the Challenges!!! Not just for developing ideas but for fun too!!!
+            </i></p><br>
+          <p><i>We are presenting footer design. Let's manipulate something and make people notice footer too!!!
+              Liked the idea? Do try the Challenges!!! Not just for developing ideas but for fun too!!!
+            </i></p>
+        </div>
+        <div class="f_social_icon">
+          <h2>follow us</h2>
+          <a href="#"  style="color: #0811b5;" class="fab fa-facebook"></a>
+          <a href="#" style="color: rgb(0, 170, 255);"  class="fab fa-twitter"></a>
+          <a href="#" style="color: #1f27bb;"  class="fab fa-linkedin"></a>
+          <a href="#" style="color: #2cfb44;"  class="fab fa-whatsapp"></a>
+          <a href="#"   style="color: #fb2c2c;"  class="fab fa-instagram"></a>
+          <a href="#" style="color: #cd0101;"  class="fab fa-youtube"></a>  
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
+</body>
+</html>
